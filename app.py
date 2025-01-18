@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 app = Flask(__name__)
 
 # Load the trained model
-model = pickle.load(open('price optimisation', 'rb'))
+model = pickle.load(open('/price optimisation', 'rb'))
 
 # Load the scaler (if used during training)
 # scaler = StandardScaler() # Assuming you saved the scaler as well
