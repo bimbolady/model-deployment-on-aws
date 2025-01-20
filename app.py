@@ -12,6 +12,9 @@ model = pickle.load(open('price optimisation', 'rb'))
 # Load the scaler (if used during training)
 # scaler = StandardScaler() # Assuming you saved the scaler as well
 # scaler = pickle.load(open('scaler.pkl', 'rb')) # Load if you saved the scaler
+@app.route('/')
+def landing_page():
+    return "<h3>Price Optimisation at Bosch Model. To query the url for a prediction with the model, use postman.</h3>"
 
 @app.route('/predict', methods=['POST'])
 def predict():
