@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Endpoint Notice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #0056b3;
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        code {
+            display: inline-block;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 1.1em;
+        }
+
+        .endpoint {
+            font-size: 1.2em;
+            color: #e63946;
+            font-weight: bold;
+        }
+
+        .steps {
+            margin: 20px 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .steps li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .steps li::before {
+            content: "\2022";
+            color: #0056b3;
+            font-weight: bold;
+            font-size: 1.5em;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Attention Required</h1>
+        <p>Welcome to the landing page for the Bosch Model.</p>
+        <p>To use the model for predictions, do the following:</p>
+
+        <p><strong>Correct Endpoint:</strong> <span class="endpoint">Google Postman on your preferred browser and add /predict to this website's url.</span></p>
+
+        <p>To update your query in Postman, please follow these steps:</p>
+        <ul class="steps">
+            <li>Open Postman and add the current url but with the /predict endpoint. The endpoint is a post request which means you cannot access it on the browser.</li>
+            <li>Ensure the HTTP method is post.</li>
+            <li>Verify that your request headers, parameters, and body are correctly configured. The body sample is shown in the github link. </li>
+            <li>Click <strong>Send</strong> to make the request.</li>
+        </ul>
+
+    </div>
+</body>
+</html>
