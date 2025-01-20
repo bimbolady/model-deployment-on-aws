@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import pickle
 from sklearn.preprocessing import StandardScaler
 
@@ -14,7 +14,7 @@ model = pickle.load(open('price optimisation', 'rb'))
 # scaler = pickle.load(open('scaler.pkl', 'rb')) # Load if you saved the scaler
 @app.route('/')
 def landing_page():
-    return "<h3>Price Optimisation at Bosch Model. To query the url for a prediction with the model, use postman.</h3>"
+    render_template('index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
