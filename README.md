@@ -16,7 +16,12 @@ Develop a presentation with presenter notes. Combine information from the previo
 - Demonstrates the ability to formulate and test new ideas. 
 - Uses a variety of effective methods, measurements, and techniques of analysis. 
 - Demonstrates the ability to present opinions and model results from findings in a well-structured and convincing way. 
-- Demonstrates the ability to plan, execute, deploy, and monitor a business analytics project with at least some element of originality. 
+- Demonstrates the ability to plan, execute, deploy, and monitor a business analytics project with at least some element of originality.
+
+#### How to use the model
+
+![image](https://github.com/user-attachments/assets/07adb3bf-1e25-4023-a614-dc5d467f5962)
+
 
 #### Author
 Abimbola Oreoluwa
