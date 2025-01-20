@@ -14,7 +14,7 @@ model = pickle.load(open('price optimisation', 'rb'))
 # scaler = pickle.load(open('scaler.pkl', 'rb')) # Load if you saved the scaler
 @app.route('/')
 def landing_page():
-    render_template('index.html')
+    return "<p>Price Optimisation Model For Bosch. To use the model, access the endpoint over at /predict. The endpoint requires a post request with a json body as specified on github.<p>"
 
 @app.route('/predict', methods=['POST'])
 def predict():
